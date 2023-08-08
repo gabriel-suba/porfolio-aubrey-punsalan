@@ -1,0 +1,45 @@
+/* NAV */
+nav {
+  padding-block: 2rem;
+  border-bottom: 1px solid var(--clr-neutral-700);
+}
+
+.icon {
+  color: var(--clr-accent-400);
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 50rem) {
+  .links {
+    gap: 2rem;
+  }
+
+  .links li {
+    position: relative;
+    font-size: 1rem;
+    transition: color 250ms ease;
+  }
+
+  .links li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: var(--clr-accent-400);
+    position: absolute;
+    bottom: -25%;
+    left: 0;
+    transition: width 250ms ease;
+  }
+
+  .links li:hover {
+    color: var(--clr-accent-400);
+  }
+
+  .links li:hover::after {
+    width: 100%;
+  }
+}
