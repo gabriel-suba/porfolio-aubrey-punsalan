@@ -7,7 +7,8 @@
   --clr-neutral-600: hsl(0, 0%, 80%);
   --clr-neutral-700: hsl(0, 0%, 90%);
   --clr-neutral-800: hsl(257, 100%, 99%);
-  --clr-accent-400: hsl(342, 60%, 69%);
+  --clr-accent-400: rgb(223, 129, 157);
+  --clr-accent-600: rgba(223, 129, 157, 0.9);
 }
 
 /* RESET */

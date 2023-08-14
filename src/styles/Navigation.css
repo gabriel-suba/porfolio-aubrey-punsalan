@@ -1,6 +1,10 @@
 /* NAV */
 nav {
-  padding-block: 2rem;
+  /* padding-block: 2rem; */
+  display: flex;
+  align-items: center;
+
+  height: 10vh;
   border-bottom: 1px solid var(--clr-neutral-700);
 }
 
