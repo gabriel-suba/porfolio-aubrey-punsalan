@@ -23,6 +23,10 @@
   cursor: pointer;
 }
 
+.filter__btn--curr {
+  color: var(--clr-accent-400);
+}
+
 .gallery__masonry {
   display: grid;
   grid-template-columns: repeat(auto-fill, 1fr);

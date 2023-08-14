@@ -1,18 +1,58 @@
+import { useState } from "react";
 import "../styles/Gallery.css";
 
 const Gallery = () => {
+  const [arts, setArts] = useState([...gallery]);
+  const [type, setType] = useState("all");
+
+  const handleFilter = (filter) => {
+    if (filter === "all") {
+      setArts([...gallery]);
+      setType(filter);
+      return;
+    }
+
+    const result = gallery.filter((art) => filter === art.type);
+    setType(filter);
+    setArts([...result]);
+  };
+
   return (
     <div className="gallery container">
       {/* TODO: FILTER FUNCTION */}
       <h2 className="gallery__header">MY PREVIOUS WORKS</h2>
       <div className="gallery__filter">
-        <div className="filter__btn">All</div>
-        <div className="filter__btn">Illustrations</div>
-        <div className="filter__btn">Graphics Design</div>
-        <div className="filter__btn">Background</div>
+        <div
+          onClick={() => handleFilter("all")}
+          className={`filter__btn ${type === "all" ? "filter__btn--curr" : ""}`}
+        >
+          All
+        </div>
+        <div
+          onClick={() => handleFilter("illustration")}
+          className={`filter__btn ${
+            type === "illustration" ? "filter__btn--curr" : ""
+          }`}
+        >
+          Illustrations
+        </div>
+        <div
+          onClick={() => handleFilter("graphics")}
+          className={`filter__btn ${
+            type === "graphics" ? "filter__btn--curr" : ""
+          }`}
+        >
+          Graphics Design
+        </div>
+        <div
+          onClick={() => handleFilter("bg")}
+          className={`filter__btn ${type === "bg" ? "filter__btn--curr" : ""}`}
+        >
+          Background
+        </div>
       </div>
       <div className="gallery__masonry">
-        {gallery.map((item, index) => (
+        {arts.map((item, index) => (
           <div
             className={`column__item ${
               index % 2 === 0 ? "span-12" : "span-17"
