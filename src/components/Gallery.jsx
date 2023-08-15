@@ -55,7 +55,7 @@ const Gallery = () => {
         {arts.map((item, index) => (
           <div
             className={`column__item ${
-              index % 2 === 0 ? "span-12" : "span-17"
+              item.orientation === "h" ? "span-12" : "span-17"
             }`}
             key={index}
           >
@@ -89,22 +89,22 @@ import bg_4 from "../assets/bg/4.png";
 import bg_6 from "../assets/bg/6.png";
 
 const gallery = [
-  { url: illustration_1, type: "illustration" },
-  { url: illustration_3, type: "illustration" },
-  { url: bg_3, type: "bg" },
-  { url: illustration_4, type: "illustration" },
-  { url: graphics_2, type: "graphics" },
-  { url: illustration_6, type: "illustration" },
-  { url: graphics_6, type: "graphics" },
-  { url: illustration_2, type: "illustration" },
-  { url: bg_4, type: "bg" },
-  { url: illustration_5, type: "illustration" },
-  { url: graphics_5, type: "graphics" },
-  { url: bg_6, type: "bg" },
-  { url: bg_2, type: "bg" },
-  { url: graphics_7, type: "graphics" },
-  { url: bg_1, type: "bg" },
-  { url: graphics_1, type: "graphics" },
-  { url: graphics_3, type: "graphics" },
-  { url: graphics_4, type: "graphics" },
+  { url: illustration_1, type: "illustration", orientation: "h" },
+  { url: illustration_2, type: "illustration", orientation: "p" },
+  { url: illustration_3, type: "illustration", orientation: "p" },
+  { url: illustration_4, type: "illustration", orientation: "p" },
+  { url: illustration_5, type: "illustration", orientation: "p" },
+  { url: illustration_6, type: "illustration", orientation: "p" },
+  // { url: graphics_1, type: "graphics", orientation: "h" },
+  { url: graphics_2, type: "graphics", orientation: "h" },
+  { url: graphics_3, type: "graphics", orientation: "h" },
+  { url: graphics_4, type: "graphics", orientation: "h" },
+  { url: graphics_5, type: "graphics", orientation: "h" },
+  { url: graphics_6, type: "graphics", orientation: "h" },
+  { url: graphics_7, type: "graphics", orientation: "p" },
+  { url: bg_6, type: "bg", orientation: "p" },
+  { url: bg_1, type: "bg", orientation: "h" },
+  { url: bg_2, type: "bg", orientation: "h" },
+  { url: bg_3, type: "bg", orientation: "h" },
+  { url: bg_4, type: "bg", orientation: "h" },
 ];
