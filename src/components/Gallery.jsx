@@ -80,7 +80,6 @@ import illustration_3 from "../assets/illustration/3.png";
 import illustration_4 from "../assets/illustration/4.png";
 import illustration_5 from "../assets/illustration/5.png";
 import illustration_6 from "../assets/illustration/6.png";
-import graphics_1 from "../assets/graphics/1.png";
 import graphics_2 from "../assets/graphics/2.png";
 import graphics_3 from "../assets/graphics/3.png";
 import graphics_4 from "../assets/graphics/4.png";
@@ -100,7 +99,6 @@ const gallery = [
   { url: illustration_4, type: "illustration", orientation: "p" },
   { url: illustration_5, type: "illustration", orientation: "p" },
   { url: illustration_6, type: "illustration", orientation: "p" },
-  // { url: graphics_1, type: "graphics", orientation: "h" },
   { url: graphics_2, type: "graphics", orientation: "h" },
   { url: graphics_3, type: "graphics", orientation: "h" },
   { url: graphics_4, type: "graphics", orientation: "h" },
