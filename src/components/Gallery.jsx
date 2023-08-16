@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import "../styles/Gallery.css";
 
 const Gallery = () => {
@@ -53,14 +54,18 @@ const Gallery = () => {
       </div>
       <div className="gallery__masonry">
         {arts.map((item, index) => (
-          <div
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
             className={`column__item ${
               item.orientation === "h" ? "span-12" : "span-17"
             }`}
             key={index}
           >
             <img src={item.url} alt={item.type} />
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

@@ -9,7 +9,7 @@ const Headline = () => {
         <motion.div
           initial={{ x: "100%", opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
           className="hero__illustration"
         >
           <img src={artist} alt="women holding a pen tool in illustration" />
@@ -17,7 +17,7 @@ const Headline = () => {
         <motion.div
           initial={{ x: "-100%", opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
           className="hero__cta"
         >
           <h1 className="cta__header">

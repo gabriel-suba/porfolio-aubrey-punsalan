@@ -11,25 +11,25 @@ const Contact = () => {
   const handleSendEmail = (e) => {
     e.preventDefault();
 
-    setSending(true);
+    // setSending(true);
 
-    emailjs
-      .sendForm(
-        "service_hoclj5h",
-        "contact-aubreyanne",
-        contactForm.current,
-        "C3Lhj_9x1BxD_TZ3f"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setSending(false);
-          contactForm.current.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    // emailjs
+    //   .sendForm(
+    //     "service_hoclj5h",
+    //     "contact-aubreyanne",
+    //     contactForm.current,
+    //     "C3Lhj_9x1BxD_TZ3f"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //       setSending(false);
+    //       contactForm.current.reset();
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
   };
 
   return (

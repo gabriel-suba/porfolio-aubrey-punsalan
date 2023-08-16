@@ -12,6 +12,8 @@
   height: 80vh;
   padding-top: 2rem;
   padding-bottom: 2rem;
+
+  overflow: hidden;
 }
 
 .hero__illustration {
