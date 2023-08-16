@@ -9,35 +9,35 @@ const Navigation = () => {
     <nav>
       <div className="container flex-between">
         <div className="icon">
-          <h1>meowb.</h1>
+          <h1>myeowb.</h1>
           {/* <img src={icon} alt="" height={50} /> */}
         </div>
-        <ul className="links">
+        {/* <ul className="links">
           <li>
             <a href="#" className="md">
               Gallery
             </a>
-            <a href="#" className="sm">
-              <img src={gallery} alt="" height={25} width={25} />
+            <a href="#" className="sm links__icon">
+              <img src={gallery} alt="" />
             </a>
           </li>
           <li>
             <a href="#" className="md">
               Contact
             </a>
-            <a href="#" className="sm">
-              <img src={contact} alt="" height={25} width={25} />
+            <a href="#" className="sm links__icon">
+              <img src={contact} alt="" />
             </a>
           </li>
           <li>
             <a href="#" className="md">
               Socials
             </a>
-            <a href="#" className="sm">
-              <img src={socials} alt="" height={25} width={25} />
+            <a href="#" className="sm links__icon">
+              <img src={socials} alt="" />
             </a>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </nav>
   );

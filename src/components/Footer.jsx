@@ -17,7 +17,7 @@ const Footer = () => {
           <img src={linkedin} alt="an icon of linkedin" />
         </a>
       </div>
-      <p className="footer__copyright">Aubrey Ann Punsalan &copy; 2023</p>
+      <p className="footer__copyright">Aubrey Anne Punsalan &copy; 2023</p>
     </div>
   );
 };

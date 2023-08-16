@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import "../styles/Hero.css";
 import artist from "../assets/pen-tool.svg";
 
@@ -5,10 +6,20 @@ const Headline = () => {
   return (
     <div className="hero">
       <div className="wrapper container">
-        <div className="hero__illustration">
+        <motion.div
+          initial={{ x: "100%", opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          className="hero__illustration"
+        >
           <img src={artist} alt="women holding a pen tool in illustration" />
-        </div>
-        <div className="hero__cta">
+        </motion.div>
+        <motion.div
+          initial={{ x: "-100%", opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          className="hero__cta"
+        >
           <h1 className="cta__header">
             THIS IS <span className="cta__header--accent">AUBREY</span>
           </h1>
@@ -19,7 +30,7 @@ const Headline = () => {
           <a href="#" className="cta__btn">
             CONTACT ME
           </a>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
