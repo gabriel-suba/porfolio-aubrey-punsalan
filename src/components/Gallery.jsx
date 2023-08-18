@@ -68,6 +68,22 @@ const Gallery = () => {
           </motion.div>
         ))}
       </div>
+      <div className="gallery__reels gallery__header">
+        <h2>Checkout my animation reels!</h2>
+        <div className="reels__wrapper">
+          <iframe
+            className="reels__frame"
+            src="https://www.youtube.com/embed/ACNZORfPolE?si=fzuKDgM8pcSuHeP3&amp;controls=0"
+            title="YouTube video player"
+          ></iframe>
+          <iframe
+            className="reels__frame"
+            src="https://www.youtube.com/embed/P5oeAHm2ezU?si=DOhu8AKtYGvaOD93&amp;controls=0"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
+        </div>
+      </div>
     </div>
   );
 };
