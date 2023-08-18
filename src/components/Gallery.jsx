@@ -70,7 +70,13 @@ const Gallery = () => {
       </div>
       <div className="gallery__reels gallery__header">
         <h2>Checkout my animation reels!</h2>
-        <div className="reels__wrapper">
+        <motion.div
+          initial={{ y: "50%", opacity: 0.5, filter: "blur(5px)" }}
+          whileInView={{ y: 0, opacity: 1, filter: "blur(0px)" }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="reels__wrapper"
+        >
           <iframe
             className="reels__frame"
             src="https://www.youtube.com/embed/ACNZORfPolE?si=fzuKDgM8pcSuHeP3&amp;controls=0"
@@ -82,7 +88,7 @@ const Gallery = () => {
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           ></iframe>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

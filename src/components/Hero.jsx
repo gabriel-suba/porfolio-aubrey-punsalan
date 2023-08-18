@@ -7,8 +7,8 @@ const Headline = () => {
     <div className="hero">
       <div className="wrapper container">
         <motion.div
-          initial={{ x: "100%", opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
+          initial={{ y: "50%", opacity: 0.5, filter: "blur(5px)" }}
+          animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
           transition={{ duration: 0.5 }}
           className="hero__illustration"
         >
