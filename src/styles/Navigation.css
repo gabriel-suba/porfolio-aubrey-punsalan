@@ -12,6 +12,10 @@ nav {
   color: var(--clr-accent-400);
 }
 
+.icon h1 {
+  cursor: default;
+}
+
 .links {
   display: flex;
   align-items: center;
