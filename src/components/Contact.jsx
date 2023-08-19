@@ -33,7 +33,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact">
+    <div className="contact" id="contact-me">
       <div className="contact__wrapper container">
         <div className="contact__illustration">
           <img src={message} />

@@ -27,7 +27,7 @@ const Headline = () => {
             An Artist, Graphic Designer, and Illustrator. Crafting imagination,
             one brushstroke at a time.
           </p>
-          <a href="#" className="cta__btn">
+          <a href="#contact-me" className="cta__btn">
             CONTACT ME
           </a>
         </motion.div>

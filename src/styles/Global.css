@@ -11,6 +11,10 @@
   --clr-accent-600: rgba(223, 129, 157, 0.9);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* RESET */
 * {
   margin: 0;
